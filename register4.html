@@ -1,0 +1,1466 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+body {
+    background-color: gray;
+    font-family: Iskoola Pota;
+
+  font-family: "Open Sans";
+}
+#wrapper
+{
+  border: 1px solid #888;
+  display: inline-block;
+  padding:20px;
+  
+}
+
+</style>
+<!-- Style Sheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- JavaScrip files-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- .......................................................................................... -->
+<div class="container">
+<!-- navigation bar -->
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  
+	
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="contactus.html">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="login.html">Login out</a>
+  </li>
+</ul>
+  <!-- Banner-->
+  <center>
+<img src="download.jpg" class="img-fluid" alt="Responsive image"></center>
+
+
+<div class="alert alert-primary" role="alert">
+<div class="container" style="width:450px;margin-top:50px;">
+	
+<form action="Registeraction4.php" method="POST">
+<center><h2>සැකකරු අධිකරණයට</h2></center></center>
+
+
+<div class="col">
+    <label for="validationServer0"></label>
+      <input type="hidden" id="custId" name="s_number">
+    </div>
+ 
+  
+
+
+    <div class="col">
+    <label for="validationServer01">සැකකරු අධිකරණයට ඉදිරිපත් විය යුතු දිනය</label>
+      <input type="Date" class="form-control is-valid" placeholder="දිනය" name="Date_the_suspect_is_to_appear_in_court">
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer02">සැකකරු ඇප කොන්දේසි පරිදි අධිකරණයට වෙත ඉදිරිපත් වී ඇත් ද නැත් ද යන වග</label>
+   
+ 
+<p>
+<input type="radio" name="SubmittedorNot"> ඉදිරිපත් වී ඇත</input>
+</p>
+<p>
+<input type="radio" name="SubmittedorNot"> ඉදිරිපත් වී නැත</input>
+</p>
+</div>
+    
+	<div class="col">
+	
+	
+     <label for="validationServer03">සැකකරු සම්බන්ධ අධිකරණ නියෝගය</label>
+       <textarea id="w3review" name="Court_order_regarding_the_suspect" rows="4" cols="50"></textarea>
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer04">වෛද්‍ය වාර්තා අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="වෛද්‍ය වාර්තා අංකය" name="Medical_Report_No">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer05">පිටවීමේ සටහන යෙදු තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="පිටවීමේ සටහන යෙදු තොරතුරු පොතේ යොමුව" name="Exit_Note_Reference_Book">
+    </div>
+
+
+
+<div class="col">
+   <label for="validationServer06"><h5>වෛද්‍යවරයා වෙත ඉදිරිපත් කිරීම</h5></label>
+     
+    </div>
+
+
+    <div class="col">
+   <label for="validationServer07"><h5>සැකකරු වෛද්‍යවරයා වෙත ඉදිරිපත් කළ</h5></label>
+     
+    </div>
+
+<div class="col">
+
+<span>
+
+        <label for="Date">දිනය</label>
+      <input type="date" class="" placeholder="" name="Dated">
+
+
+</span>
+<span>
+
+        <label for="time">වේලාව</label>
+        <input type="time" class="" placeholder="" name="Timed">
+</span>
+    
+</div>
+
+<div class="col">
+   <label for="validationServer08">රෝහල</label>
+    <input type="text" class="form-control is-valid" placeholder="රෝහල" name="Hospital">
+    </div>
+
+
+ <div class="col">
+   <label for="validationServer09">වෛද්‍යවරයාගේ නම</label>
+    <input type="text" class="form-control is-valid" placeholder="වෛද්‍යවරයාගේ නම" name="Name_of_the_doctor">
+    </div>
+
+    <div class="col">
+  
+  
+     <label for="validationServer10">වෛද්‍ය වාර්තාවේ කෙටි ඉතිහාසය</label>
+       <textarea id="w3review" name="A_brief_history_of_the_medical_report" rows="4" cols="50"></textarea>
+    </div>
+  <div class="col">
+  
+
+
+
+<div class="col">
+   <label for="validationServer11"><h5>සැකකරු සැකකරු වෛද්‍යවරයා වෙත ඉදිරිපත් කළ</h5></label>
+</div>
+
+ 
+        <label for="rank">නිලය:</label>
+      <select name="pp_presented_the_suspect_doct" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Offcial_Number">
+</span>
+
+
+<div class="col">
+   <label for="validationServer13">නිලධාරියාගේ හෝ නිලධාරිනියගේ නම</label>
+    <input type="text" class="form-control is-valid" placeholder="නිලධාරියාගේ හෝ නිලධාරිනියගේ නම" name="Officer_Name_of_the_person_who_presented_the_suspect_to_the_doct">
+    </div>
+
+<div class="col">
+   <label for="validationServer14"><h5>සැකකරු නැවත පොලිස් ස්ථානය ඉදිරිපත් කළේ නම්</h5></label>
+</div>
+
+<span>
+
+
+  <label for="Date">දිනය:</label>
+        <input type="Date" class="" placeholder="" name="Date_if_the_suspect_was_produced_back_to_the_police">
+
+
+</span>
+<span>
+
+        <label for="time">වේලාව:</label>
+        <input type="time" class="" placeholder="" name="Time_if_the_suspect_was_produced_back_to_the_police">
+</span>
+
+
+
+<div class="col">
+   <label for="validationServer16">තොරතුරු පොතේ යොමුව</label>
+    <input type="text" class="form-control is-valid" placeholder="තොරතුරු පොතේ යොමුව" name="Reference_to_the_information_bookd">
+    </div>
+
+
+<div class="col">
+   <label for="validationServer17"><h5>අධිකරණය වෙත ඉදිරිපත් කළ</h5></label>
+</div>
+
+<span>
+
+        <label for="Date">දිනය:</label>
+        <input type="Date" class="" placeholder="" name="Date_submitted_to_the_court">
+
+
+</span>
+<span>
+
+        <label for="time">වේලාව:</label>
+        <input type="time" class="" placeholder="" name="Time_submitted_to_the_court">
+</span>
+
+   <div class="col">
+   <label for="validationServer18">අත්අඩංගුවට ගත් වෙලාවේ අධිකරණය වෙත ඉදිරිපත් කිරීමට ගත වූ කාලය</label>
+
+
+   </div>
+  <center>
+<div class="nativeTimePicker">
+     <span>
+        <label for="hour">පැය:</label>
+        <select id="hour" name="Hours_taken_to_appear_court_at_the_time_of_arrest">
+    <option value="00">00</option>       
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+     </select>
+      </span>
+      <span>
+        <label for="minute">මිනිත්තු:</label>
+        <select id="minute" name="Minutes_taken_to_appear_in_court_at_the_time_of_arrest">
+          <option value="00">00</option>
+            <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+<option value="12">12</option>
+ <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+<option value="22">22</option>
+ <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+<option value="32">32</option>
+ <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+  <option value="44">44</option>
+  <option value="45">45</option>
+<option value="46">46</option>
+ <option value="47">47</option>
+  <option value="48">48</option>
+  <option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+  <option value="53">53</option>
+  <option value="54">54</option>
+  <option value="55">55</option>
+  <option value="56">56</option>
+<option value="57">57</option>
+ <option value="58">58</option>
+  <option value="59">59</option>
+  <option value="60">60</option>
+
+     </select>
+      </span>
+</center>
+
+
+<div class="col">
+   <label for="validationServer19"><h4>සැකකරු අධිකරණයට වාර්තා කිරීම</h4></label>
+
+
+   </div>
+
+
+<span>
+
+        <label for="Date">දිනය:</label>
+        <input type="Date" class="" placeholder="" name="Date_the_suspect_reported_to_the_court">
+
+
+</span>
+<span>
+
+        <label for="time">වේලාව:</label>
+        <input type="time" class="" placeholder="" name="Time_the_suspect_reported_to_the_court">
+</span>
+
+   <div class="col">
+   <label for="validationServer18">අත්අඩංගුවට ගත් වෙලාවේ අධිකරණය වෙත ඉදිරිපත් කිරීමට ගත වූ කාලය</label>
+
+
+   </div>
+  <center>
+<div class="nativeTimePicker">
+     <span>
+        <label for="hour">පැය:</label>
+        <select id="hour" name="Hours_taken_to_produce_in_court_at_the_time_of_arrest">
+  <option value="00">00</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+<option value="12">12</option>
+
+     </select>
+      </span>
+      <span>
+        <label for="minute">මිනිත්තු:</label>
+        <select id="minute" name="Mintues_taken_to_produce_in_court_at_the_time_of_arrest">
+
+  <option value="00">00</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+<option value="12">12</option>
+ <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+<option value="22">22</option>
+ <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+<option value="32">32</option>
+ <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+  <option value="44">44</option>
+  <option value="45">45</option>
+<option value="46">46</option>
+ <option value="47">47</option>
+  <option value="48">48</option>
+  <option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+  <option value="53">53</option>
+  <option value="54">54</option>
+  <option value="55">55</option>
+  <option value="56">56</option>
+<option value="57">57</option>
+ <option value="58">58</option>
+  <option value="59">59</option>
+  <option value="60">60</option>
+
+     </select>
+      </span>
+</center>
+
+<div class="col">
+   <label for="validationServer19">සැකකරු අධිකරණයට ඉදිරිපත් කළ නිලධාරියාගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_officer_who_produced_the_suspect_in_court" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="The_Official_nu_of_the_officer_who_produced_the_suspect_in_court">
+</span>
+
+
+    <div class="col">
+  
+           <label for="validationServer20">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="The_Official_na_of_the_officer_who_produced_the_suspect_in_court">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer21">බී.ආර්.අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="බී.ආර්.අංකය" name="BR_No">
+    </div>
+
+
+      <div class="col">
+     <label for="validationServer22">අධිකරණය නියෝගය</label>
+       <textarea id="w3review" name="Court_order" rows="4" cols="50"></textarea>
+    </div>
+ 
+  
+    <div class="col">
+  
+           <label for="validationServer23">ඇප ලබා දුන් දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="ඇප ලබා දුන් දිනය" name="Date_of_bail">
+    </div>
+
+ <div class="col">
+   <label for="validationServer24"><h5>ඇපකරුවන්ගේ විස්තරය</h5></label>
+
+
+   </div>
+<div class="col">
+   <label for="validationServer25"><h6>පළමුවන ඇපකරු</h6></label>
+
+
+   </div>
+
+ <div class="col">
+  
+           <label for="validationServer26">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_first_guarantor">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer27">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Address_of_the_first_guarantor">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer28">ජාතික හැදුනුම්පත් අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජාතික හැදුනුම්පත් අංකය" name="ID_Card_N_of_the_first_guarantor">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer29">පොලිස් වසම</label>
+       
+        <select name="Police_Domain_of_the_first_guarantor" id="vasam">
+  <option value="කොළඹ">කොළඹ</option>
+  <option value="කොටුව">කොටුව</option>
+  <option value="අක්මීමන">අක්මීමන</option>
+  <option value="සීදුව">සීදුව</option>
+  <option value="රද්දොලුගම">රද්දොලුගම</option>
+<option value="ආමර් විදිය">ආමර් විදිය</option>
+<option value="කදාන">කදාන</option>
+</select>
+    </div>
+
+
+<div class="col">
+   <label for="validationServer30"><h6>දෙවන ඇපකරු</h6></label>
+
+
+   </div>
+
+ <div class="col">
+  
+           <label for="validationServer31">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_Second_guarantor">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer32">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Address_of_the_Second_guarantor">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer33">ජාතික හැදුනුම්පත් අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජාතික හැදුනුම්පත් අංකය" name="ID_Card_N_of_the_Second_guarantor">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer34">පොලිස් වසම</label>
+       
+        <select name="Police_Domain_of_the_Second_guarantor" id="vasam">
+  <option value="කොළඹ">කොළඹ</option>
+  <option value="කොටුව">කොටුව</option>
+  <option value="අක්මීමන">අක්මීමන</option>
+  <option value="සීදුව">සීදුව</option>
+  <option value="රද්දොලුගම">රද්දොලුගම</option>
+<option value="ආමර් විදිය">ආමර් විදිය</option>
+<option value="කදාන">කදාන</option>
+</select>
+    </div>
+
+
+
+    <div class="col">
+  
+           <label for="validationServer35">සැකකරු අධිකරණය වෙත ඉදිරිපත් කිරීම පිළිබද තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="" name="Reference_in_the_information_book_on_the_submission_of_the_suspe">
+    </div>
+
+     
+      <div class="col">
+  
+           <label for="validationServer36">සැකකරුවන්ගේ දේපල කුවිතාන්සි අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="සැකකරුවන්ගේ දේපල කුවිතාන්සි අංකය" name="Property_receipt_number_of_the_suspects">
+    </div>
+
+     
+      <div class="col">
+     <label for="validationServer37">දේපල වල විස්තර</label>
+       <textarea id="w3review" name="Property_details" rows="4" cols="50"></textarea>
+    </div>
+ 
+
+
+<div class="col">
+   <label for="validationServer38">දේපල භාරගත් උපසේවකගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="Rank_of_the_servant_who_took_over_the_property" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_servant_who_took_over_the_property">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer39">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="  Name_of_the_servant_who_took_over_the_property">
+    </div>
+
+
+<div class="col">
+   <label for="validationServer40"><h5>සැකකරුවන්ගේ දේපල</h5></label>
+
+
+   </div>
+<div class="col">
+   <label for="validationServer41"><h6>සැකකරුවන්ගේ දේපල නැවත භාරගත් තැනැත්තාගේ</h6></label>
+
+
+   </div>
+
+<div class="col">
+  
+           <label for="validationServer42">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="  Name_of_the_person_who_reclaimed_the_property_of_the_suspects">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer43">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Address_of_the_person_who_reclaimed_the_property_of_the_suspects">
+    </div>
+
+
+<div class="col">
+   <label for="validationServer44">දේපල භාරදුන් උපසේවකගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_servant_who_handed_over_the_property" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_servant_who_handed_over_the_property">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer45">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_servant_delivered_property">
+    </div>
+
+<div class="col">
+   <label for="validationServer46"><h6>සැකකරුවන්ගේ දේපල භාරගත් තැනැත්තාගේ</h6></label>
+
+
+   </div>
+
+<div class="col">
+  
+           <label for="validationServer47">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_person_who_reclaimed_the_property_of_the_suspects1">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer48">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="  Address_of_the_person_who_reclaimed_the_property_of_the_suspec1">
+    </div>
+
+<div class="col">
+   <label for="validationServer49">දේපල භාරදුන් උපසේවකගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_servant_who_handed_over_the_property1" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name=" Official_number_of_the_servant_who_handed_over_the_property1">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer50">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_servant_who_handed_over_the_property1">
+    </div>
+
+   <div class="col">
+  
+           <label for="validationServer51">දේපල භාරගත් තැනැත්තා සැකකරුට ඇති සම්බන්ධතාව</label>
+      <input type="text" class="form-control is-valid" placeholder="දේපල භාරගත් තැනැත්තා සැකකරුට ඇති සම්බන්ධතාව" name="The_relationship_of_the_person_who_took_over_the_property_to_the">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer52">දේපල භාරගත් තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="දේපල භාරගත් තොරතුරු පොතේ යොමුව" name="Reference_to_the_property_acquisition_information_book">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer53"><h5>අත්අඩංගුවට ගත් භාණ්ඩ පොලිස් ස්ථානය වෙත ඉදිරිපත් කිරීම</h5></label>
+     
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer54">නඩු භාණ්ඩ වර්ගය</label>
+      <input type="text" class="form-control is-valid" placeholder="නඩු භාණ්ඩ වර්ගය" name="Type_of_case_goods">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer55">භාරයට ගත් ප්‍රමාණය</label>
+      <input type="text" class="form-control is-valid" placeholder="භාරයට ගත් ප්‍රමාණය" name="Amount_taken_into_custody">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer56">ස්ථානයේ විනාශ කළ ප්‍රමාණය</label>
+      <input type="text" class="form-control is-valid" placeholder="ස්ථානයේ විනාශ කළ ප්‍රමාණය" name=" The_amount_destroyed_at_the_site">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer57">පොලිස් ස්ථානයට ඉදිරිපත් කළ ප්‍රමාණය</label>
+      <input type="text" class="form-control is-valid" placeholder="පොලිස් ස්ථානයට ඉදිරිපත් කළ ප්‍රමාණය" name="Quantity_submitted_to_the_police_station">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer58">නඩු බඩු කුවිතාන්සි අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="නඩු බඩු කුවිතාන්සි අංකය" name="Case_Receipt_No">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer59">පොලිස් ස්ථානයට ඉදිරිපත් කළ තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="පොලිස් ස්ථානයට ඉදිරිපත් කළ තොරතුරු පොතේ යොමුව" name="Reference_to_the_information_book_submitted_to_the_police_statio">
+    </div>
+
+
+<div class="col">
+   <label for="validationServer60">නඩු බඩු භාරගත් උපසේවක නිලධාරියාගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="Of_the_sub_officer_in_charge_of_the_case_Rank" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_sub_officer_who_received_the_case">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer61">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="  Name_of_the_sub_officer_in_charge_of_the_case">
+    </div>
+
+   
+
+<div class="col">
+  
+           <label for="validationServer62">නඩු බඩු කාමරයට යොමු කළ දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Date_referred_to_the_case_room">
+    </div>
+
+
+<div class="col">
+   <label for="validationServer63">නඩු බඩු කාමරයට භාරදුන් නිලධාරියාගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_officer_in_charge_of_the_luggage_room" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_officer_in_charge_of_the_luggage_room">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer64">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_officer_in_charge_of_the_luggage_room">
+    </div>
+
+
+<div class="col">
+   <label for="validationServer60">නඩු බඩු කාමරයට භාරගත් නිලධාරියාගේ</label>
+
+
+   </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_officer_in_charge_of_the_case_room" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_officer_in_charge_of_the_case_room">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer61">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_officer_in_charge_of_the_case_room">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer63"><h5>නඩු බඩු අධිකරණයට රැගෙන යන නිලධාරියාට නිකුත් කළ නිලධාරියාගේ </h5></label>
+     
+    </div>
+
+
+
+<label for="Date">නිලය:</label>
+      <select name="rank_of_the_officer_issued_to_the_officer" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_officer_issued_to_the_officer_taking">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer63">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="  Name_of_the_officer_who_issued_the_case_to_the_officer_taking">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer64">තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="තොරතුරු පොතේ යොමුව" name="Reference_to_the_information_book_issue">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer65"><h5>නඩු බඩු අධිකරණය වෙත යොමු කිරීම.</h5></label>
+     
+    </div>
+
+<label for="Date">නිලය:</label>
+      <select name="Rank_of_the_officer_who_referred_the_case_to_the_court" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_officer_who_referred_the_case_to_the_cour">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer66">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_of_the_officer_who_referred_the_case_to_the_court">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer67">තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="තොරතුරු පොතේ යොමුව" name="Reference_to_the_information_book_Court">
+    </div>
+
+
+ <div class="col">
+  
+           <label for="validationServer68">අධිකරණයට ඉදිරිපත් කළ දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Date_submitted_to_the_court1">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer69">අධිකරණයේ දී භාර ගත් නිලධාරියාගේ</label>
+      
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer70">තනතුර</label>
+      <input type="text" class="form-control is-valid" placeholder="තනතුර" name=" Of_the_officer_who_took_over_in_court_Position">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer71">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="officer_tc_name">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer72">නඩු භාණ්ඩ රදවා තබන ලද ස්ථානය</label>
+      <input type="text" class="form-control is-valid" placeholder="නඩු භාණ්ඩ රදවා තබන ලද ස්ථානය" name="Location_of_case_items">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer73">නඩු භාණ්ඩ අධිකරණය වෙත ඉදිරිපත් කිරීම සම්බන්ධ ව අදාළ සටහන් ඇතුලත් තොරතුරු පොතේ යොමුව </label>
+      <input type="text" class="form-control is-valid" placeholder="නඩු භාණ්ඩ අධිකරණය වෙත ඉදිරිපත් කිරීම සම්බන්ධ ව අදාළ සටහන් ඇතුලත් තොරතුරු පොතේ යොමුව" name="Reference_the_information_book2">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer74"><h5>නඩු භාණ්ඩ විශ්ලේෂණය සදහා ඉදිරිපත් කිරීම</h5></label>
+     
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer75"><h6>මුලික සාක්‍ෂි ලබා දුන් නිලධාරියාගේ</h6></label>
+     
+    </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_officer_who_gave_the_preliminary_evidence" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_officer_who_gave_the_initial_evidence">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer76">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="  Name_of_the_officer_who_gave_the_initial_evidence">
+    </div>
+
+
+ <div class="col">
+  
+           <label for="validationServer77">මුලික සාක්‍ෂි ලබා දුන් දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Date_of_Preliminary_Evidence">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer78"><h6>නඩු භාණ්ඩ විශ්ලේෂණය සදහා රැගෙන ගිය නිලධාරියාගේ</h6></label>
+      
+    </div>
+
+<label for="Date">නිලය:</label>
+      <select name="The_rank_of_the_officer_who_took_the_case_for_analysis" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number_of_the_officer_who_took_the_case_for_analysis">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer79">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="  Name_of_the_officer_who_took_the_case_for_analysis">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer80"><h5>නඩු භාණ්ඩ රැගෙන යාම </h5></label>
+     
+    </div>
+
+
+
+
+ <div class="col">
+  
+           <label for="validationServer81">දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Datec">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer82">ස්ථානය</label>
+      <input type="text" class="form-control is-valid" placeholder="ස්ථානය" name="Placec">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer83">අංකය</label>
+      <input type="number" class="form-control is-valid" placeholder="අංකය" name="Number">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer84">භාරදුන් දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Dateh">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer85">අදාළ ස්ථානය වෙත භාරදීම හා සන්දේශ ගොනු කිරීම පිළිබද ව යොදනු ලද සටහන් ඇතුලත් තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="" name="Reference_No">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer86"><h5>විශ්ලේෂණය සදහා යොමු කරන ලද නඩු භාණ්ඩ නැවත රැගෙන ඒම</h5></label>
+     
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer87">විශ්ලේෂණ වාර්තාව අධිකරණයට ලද දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Court_recevied_Date">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer88"><h6>විශ්ලේෂණය කරන ලද නඩු භාණ්ඩ රැගෙන ආ නිලධාරියාගේ</h6></label>
+      
+    </div>
+
+<label for="Date">නිලය:</label>
+      <select name="CA_OfizerRank" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="CA_OfizerNo">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer89">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="CA_OfizerName">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer90">අධිකරණයට භාර දුන් දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Date_of_submission_to_the_court">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer91">තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="තොරතුරු පොතේ යොමුව" name="  Reference_to_the_information_book3">
+    </div>
+
+
+   <div class="col">
+     <label for="validationServer92">නඩු භාණ්ඩ සම්බන්ධ අවසන් නියෝගය</label>
+       <textarea id="w3review" name="Fo_regarding_case_items" rows="4" cols="50"></textarea>
+    </div>
+ 
+<div class="col">
+  
+           <label for="validationServer93">නඩු භාණ්ඩ අධිකරණය මගින් විනාශ කළේ නම්, එලෙස විනාශ කරන ලද දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Ct_destory_Date">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer94"><h5>අත්අඩංගුවට ගත් වාහන පිළිබද විස්තර</h5></label>
+       </div>
+
+<div class="col">
+  
+           <label for="validationServer95">වාහනය අත්අඩංගුවට ගත් අවස්ථාවේ රියදුරු වශයෙන් සිටින ලද පුද්ගලයාගේ</label>
+   </div>
+
+
+ <div class="col">
+  
+           <label for="validationServer96">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Driver_Name">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer97">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Driver_Address">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer98">ජා.හැ.අං/රි.බ.අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජා.හැ.අං/රි.බ.අංකය" name="D_ID_DL">
+    </div>
+
+    
+<div class="col">
+  
+           <label for="validationServer99">ලියාපදිංචි අයිතිකරුගේ</label>
+   </div>
+
+
+<div class="col">
+  
+           <label for="validationServer100">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="R_Name">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer101">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="R_Address">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer102">ජා.හැ.අං</label>
+      <input type="text" class="form-control is-valid" placeholder="ජා.හැ.අං" name="R_IDNo">
+    </div>
+
+
+<div class="col">
+     <label for="validationServer103">අත්අඩංගුවට ගැනීමට හේතුව</label>
+       <textarea id="w3review" name="Reason_for_arrest" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="col">
+  
+           <label for="validationServer104"><h5>අත්අඩංගුවට ගත් වාහන අධිකරණයට මගින් මුදා හැරීම</h5></label>
+       </div>
+
+
+<div class="col">
+  
+           <label for="validationServer105">දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Vehicle_Release_date">
+    </div>
+
+      <div class="col">
+  
+           <label for="validationServer104"><h5>නඩු භාණ්ඩ මුදාහරින තැනැත්තාගේ</h5></label>
+       </div>
+
+
+<div class="col">
+  
+           <label for="validationServer106">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_vo">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer107">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Address_vo">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer108">ජා.හැ.අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජා.හැ.අංකය" name="ID_Number_vo">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer109">නඩු භාණ්ඩ රාජ සන්තක කළේ නම් එම දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="  If_the_case_was_confiscated_on_that_date">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer110"><h5>අධිකරණය නියෝග මත පොලිස් ස්ථානයේ රදවන නඩු භාණ්ඩ මුදා හැරීම</h5></label>
+       </div>
+
+<div class="col">
+     <label for="validationServer111">අධිකරණය නියෝගය</label>
+       <textarea id="w3review" name="Court_order_for_release" rows="2" cols="38"></textarea>
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer112">නඩු භාණ්ඩ මුදා හල නිලධාරියාගේ සම්පුර්ණ නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නඩු භාණ්ඩ මුදා හල නිලධාරියාගේ සම්පුර්ණ නම" name="Full_name_of_the_officer_who_released_the_case_items">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer113">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name_R">
+    </div>
+
+ <div class="col">
+  
+           <label for="validationServer114">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Address_R">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer115">ජා.හැ.අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජා.හැ.අංකය" name="ID_Number_R">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer116">නඩු භාණ්ඩ මුදා හැරිම පිළිබද සටහන් ඇතුලත් තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="නඩු භාණ්ඩ මුදා හැරිම පිළිබද සටහන් ඇතුලත් තොරතුරු පොතේ යොමුව" name="Release_Reference_Inforbook">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer117"><h5>නඩු පැවරීම</h5></label>
+       </div>
+
+<div class="col">
+  
+           <label for="validationServer118">නඩු පවරන ලද දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Date_of_filing">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer119">නඩු අංකය</label>
+      <input type="textarea" class="form-control is-valid" placeholder="" name="Case_number">
+    </div>
+
+
+<div class="col">
+  
+           <label for="validationServer120"><h6>පැමිණිල්ල අධිකරණය වෙත ඉදිරිපත් කළ නිලධාරියාගේ </h6></label>
+      
+    </div>
+
+<label for="Date">නිලය:</label>
+      <select name="Of_the_officer_who_filed_the_complaint_in_court_Rank" id="ranks">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Of_the_officer_who_filed_the_complaint_in_court_Official_number">
+</span>
+
+
+
+     <div class="col">
+  
+           <label for="validationServer121">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Of_the_officer_who_filed_the_complaint_in_court_Name">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer122">අක්ෂරය</label>
+      <input type="text" class="form-control is-valid" placeholder="අක්ෂරය" name="Character">
+    </div>
+
+
+<div class="col">
+     <label for="validationServer123">අවසන් ප්‍රතිපලය</label>
+       <textarea id="w3review" name="The_end_result" rows="4" cols="38"></textarea>
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer124">ත්‍යාග වවුචර්පත ඉදිරිපත් කළ දිනය </label>
+      <input type="date" class="form-control is-valid" placeholder="" name="Date_of_presentation_of_gift_voucher">
+    </div>
+
+<div class="col">
+  
+           <label for="validationServer125">මු.පො.ප/ස්ථානධිපතිගේ අත්සන</label>
+      <input type="text" class="form-control is-valid" placeholder="මු.පො.ප/ස්ථානධිපතිගේ අත්සන" name="Signature_of_the_OIC">
+    </div>
+
+
+
+
+
+      <center>
+    <a href="register1.html">පසු පිටුවට</a>   
+ <button type="reset" class="btn btn-primary">මකන්න</button>
+<button type="submit" class="btn btn-primary">ඉදිරිපත් කරන්න</button>
+ </center>
+    <center><a href='login.html'>Login here</a></center>
+</form>
+  
+   <style>
+.footer {
+    position: fixed;
+    left: ;
+    bottom: 0;
+    width: 100%;
+  height: 3%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>All Right reserved @warunachathuranga@</p>
+  
+</div>
+</div>
+</body>
+</html>

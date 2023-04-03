@@ -1,0 +1,150 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+body {
+    background-color: gray;
+    font-family: Iskoola Pota;
+
+
+</style>
+<!-- Style Sheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- JavaScrip files-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- .......................................................................................... -->
+<div class="container">
+<!-- navigation bar -->
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link " href="contactus.html">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="login.html">Login out</a>
+  </li>
+</ul>
+  <!-- Banner-->
+  <center>
+<img src="download.jpg" class="img-fluid" alt="Responsive image"></center>
+
+
+<div class="alert alert-primary" role="alert">
+<div class="container" style="width:450px;margin-top:50px;">
+	
+  <form action="Registeraction1.php" method="POST">
+<center><h2>වැටලීමට අදාළ මූලික විස්තරය</h2></center></center>
+   <div class="col">
+    <label for="validationServer01">අනුක්‍රමික අංකය</label>
+      <input type="Number" class="form-control is-valid" placeholder="අනුක්‍රමික අංකය" name="s_number" >
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer02">දිනය</label>
+      <input type="date" class="form-control is-valid" placeholder="දිනය" name="Datex">
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer03">වේලාව</label>
+      <input type="time" class="form-control is-valid" placeholder="වේලාව" name="Timeb">
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer04">ස්ථානය</label>
+      <input type="palce" class="form-control is-valid" placeholder="ස්ථානය" name="Place">
+    </div>
+	
+  
+    <div class="col">
+  
+           <label for="validationServer05">වැටලීම කළ ස්ථානය ඇති පෙර වැරදි වල නඩු අංක</label>
+      <input type="text" class="form-control is-valid" placeholder="වැටලීම කළ ස්ථානය ඇති පෙර වැරදි වල නඩු අංක" name="prior_case_Noof_lraid">
+    </div>
+  
+   <div class="col">
+    
+       <label for="validationServer06">වැටලීම කළ ග්‍රාම නිලධාරි වසම හා අංකය</label>
+      <input type="text" class="form-control is-valid"  placeholder="වැටලීම කළ ග්‍රාම නිලධාරි වසම හා අංකය" name="GS_domain_Noof_lraid">
+    </div>
+  <div class="col">
+    <label for="rank" class="col-form-label">වැටලීම කළ නිලධාරියාගේ නිලය</label>
+      <select name="The_rank_of_the_officer_who_carried_out_the_raid" id="cars">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+    
+     </div>
+     <div class="col">
+   <label for="validationServer07">නිල අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="නිල අංකය" name="The_Offcial_Number_of_the_officer_who_carried_out_the_raid">
+    </div>
+<div class="col">
+   <label for="validationServer08">නිලධාරියාගේ නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නිලධාරියාගේ නම" name="The_Offcial_Name_of_the_officer_who_carried_out_the_raid">
+    </div>
+
+    <div class="col">
+   <label for="validationServer09">අනුයුක්ත ස්ථානය</label>
+      <input type="place" class="form-control is-valid" placeholder="අනුයුක්ත ස්ථානය" name="Location_attached">
+    </div>
+
+<div class="col">
+   <label for="validationServer10">නිලධාරියා විසින් යොදන ලද සටහන් ඇතුළත් තොරතුරු පොතේ යොමුව</label>
+      <input type="text" class="form-control is-valid" placeholder="නිලධාරියා විසින් යොදන ලද සටහන් ඇතුළත් තොරතුරු පොතේ යොමුව" name="Reference_to_the_information_book_containing_the_notes_used">
+    </div>
+
+<div class="col">
+   <label for="validationServer12">වරදේ ස්වභාවය</label>
+     <textarea id="w3review" name="The_nature_of_the_fault" rows="4" cols="50"></textarea>
+    </div>
+
+<div class="col">
+   <label for="validationServer13">නීතියේ වගන්තිය</label>
+     <input type="text" class="form-control is-valid" placeholder="නීතියේ වගන්තිය" name="Article_of_law">
+    </div>
+
+  <center>
+
+ <button type="reset" class="btn btn-primary">මකන්න</button>
+  <button type="submit" class="btn btn-primary">මීලඟ පිටුවට</button>
+ </center>
+  	<center><a href='login.html'>Login here</a></center>
+</form>
+  
+   <style>
+.footer {
+    position: fixed;
+    left: ;
+    bottom: 0;
+    width: 100%;
+	height: 3%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>All Right reserved @WarunaChathuranga@</p>
+  
+</div>
+</div>
+</body>
+</html>

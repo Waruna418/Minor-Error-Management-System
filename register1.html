@@ -1,0 +1,448 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+body {
+    background-color: gray;
+    font-family: Iskoola Pota;
+
+
+</style>
+<!-- Style Sheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- JavaScrip files-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- .......................................................................................... -->
+<div class="container">
+<!-- navigation bar -->
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  
+	
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="contactus.html">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="login.html">Login out</a>
+  </li>
+</ul>
+  <!-- Banner-->
+  <center>
+<img src="download.jpg" class="img-fluid" alt="Responsive image"></center>
+
+
+<div class="alert alert-primary" role="alert">
+<div class="container" style="width:450px;margin-top:50px;">
+	
+   <form action="Registeraction2.php" method="POST">
+<center><h2>අත්අඩංගුවට ගැනීම් පිළිබඳ විස්තරය</h2></center></center>
+
+<div class="col">
+    <label for="validationServer0"></label>
+      <input type="hidden" id="custId" name="s_number">
+    </div>
+
+   <div class="col">
+    <label for="validationServer01">දිනය</label>
+      <input type="Date" class="form-control is-valid" placeholder="දිනය" name="Datea">
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer02">වේලාව</label>
+      <input type="time" class="form-control is-valid" placeholder="වේලාව" name="Timea">
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer03">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="Name">
+    </div>
+	<div class="col">
+	
+	
+     <label for="validationServer04">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="Address">
+    </div>
+	
+  
+    <div class="col">
+  
+           <label for="validationServer05">ජාතික හැඳුනුම්පත් අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජාතික හැඳුනුම්පත් අංකය" name="  National_Identity_Card_Number">
+    </div>
+  
+   <div class="col">
+    
+       <label for="validationServer06">දුරකථන අංකය</label>
+      <input type="number" class="form-control is-valid"  placeholder="දුරකථන අංකය" name="Phone_number">
+    </div>
+  <div class="col">
+   
+    
+    
+     </div>
+     <div class="col">
+   <label for="validationServer07">පෙර වැරදි සංඛ්‍යාව</label>
+      <input type="number" class="form-control is-valid" placeholder="පෙර වැරදි සංඛ්‍යාව" name="Previous_error_number">
+    </div>
+<div class="col">
+   <label for="validationServer08"><h3>පොලිස් ස්ථානයට ඉදිරිපත් කළ</h3></label>
+     
+    </div>
+
+    <div class="col">
+   <label for="validationServer09">දිනය</label>
+      <input type="Date" class="form-control is-valid" placeholder="" name="Presented_to_the_police_station_Date">
+    </div>
+
+<div class="col">
+   <label for="validationServer10">වේලාව</label>
+      <input type="time" class="form-control is-valid" placeholder="නිලධාරියා විසින් යොදන ලද සටහන් ඇතුළත් තොරතුරු පොතේ යොමුව" name="Presented_to_the_police_station_Time">
+    </div>
+
+<div class="col">
+   <label for="validationServer12">තොරතුරු පොතේ යොමුව</label>
+    <input type="text" class="form-control is-valid" placeholder="තොරතුරු පොතේ යොමුව" name="Reference_to_the_information_book">
+    </div>
+
+<div class="col">
+   <label for="validationServer13">අත්අඩංගුව ගත් වේලාවේ සිට පොලිස් ස්ථානයට ඉදිරිපත් කිරීමට ගත වූ කාලය</label>
+  
+  <div class="nativeTimePicker">
+    <center>
+     <span>
+        <label for="hour">පැය:</label>
+        <select id="hour" name="Time_taken_to_present_at_the_police_station_from_the_Hours">
+  <option value="00">00</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+<option value="12">12</option>
+
+     </select>
+      </span>
+      <span>
+        <label for="minute">මිනිත්තු:</label>
+        <select id="minute" name="Time_taken_to_present_at_the_police_station_from_the_Minutes">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="10">11</option>
+<option value="12">12</option>
+ <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+<option value="22">22</option>
+ <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+<option value="32">32</option>
+ <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+  <option value="44">44</option>
+  <option value="45">45</option>
+<option value="46">46</option>
+ <option value="47">47</option>
+  <option value="48">48</option>
+  <option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+  <option value="53">53</option>
+   <option value="54">54</option>
+  <option value="55">55</option>
+  <option value="56">56</option>
+<option value="57">57</option>
+ <option value="58">58</option>
+  <option value="59">59</option>
+  <option value="60">60</option>
+
+     </select>
+      </span>
+    </center>
+    </div>
+  </div>
+
+ <div class="col">
+   <label for="validationServer14">රඳවා ගැනීමේ අනුක්‍රමික අංකය</label>
+    <input type="number" class="form-control is-valid" placeholder="රඳවා ගැනීමේ අනුක්‍රමික අංකය" name="Retention_serial_number">
+    </div>
+
+<div class="col">
+   <label for="validationServer15">ඇප ලබා දුන්</label>
+ </div>
+ <div class="col">
+<span>
+
+        <label for="Date">දිනය:</label>
+        <input type="Date" class="" placeholder="" name="Bail_was_granted_Date">
+
+
+</span>
+<span>
+
+        <label for="time">වේලාව:</label>
+        <input type="time" class="" placeholder="" name="Bail_was_granted_Time">
+</span>
+
+
+</div>
+
+<div class="col">
+   <label for="validationServer16"><h3>පොලිසිය මගින් ඇප ලබා දීම</h3></label>
+</div>
+
+ <div class="col">
+<span>
+
+        <label for="Date">නිලය:</label>
+      <select name="Rank" id="cars">
+  <option value="PC">PC</option>
+  <option value="WPC">WPC</option>
+  <option value="SIP">SIP</option>
+  <option value="IP">IP</option>
+  <option value="ASP">ASP</option>
+<option value="SSP">SSP</option>
+<option value="DIG">DIG</option>
+</select>
+
+
+</span>
+<span>
+
+        <label for="time">නිල අංකය:</label>
+        <input type="number" class="" placeholder="" name="Official_number">
+</span>
+
+<div class="col">
+   <label for="validationServer17">නිලධාරියාගේ හෝ නිලධාරිනියගේ නම</label>
+    <input type="text" class="form-control is-valid" placeholder="නිලධාරියාගේ හෝ නිලධාරිනියගේ නම" name="Officer_Name">
+    </div>
+
+<div class="col">
+   <label for="validationServer18">තොරතුරු පොතේ යොමුව</label>
+    <input type="text" class="form-control is-valid" placeholder="තොරතුරු පොතේ යොමුව" name="  Reference_to_the_information_book_guarantee">
+    </div>
+
+   <div class="col">
+     <label for="validationServer19">නම</label>
+      <input type="text" class="form-control is-valid" placeholder="නම" name="P_Name">
+    </div>
+  
+    <div class="col">
+     <label for="validationServer20">ලිපිනය</label>
+      <input type="text" class="form-control is-valid" placeholder="ලිපිනය" name="P_Address">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer21">ජාතික හැඳුනුම්පත් අංකය</label>
+      <input type="text" class="form-control is-valid" placeholder="ජාතික හැඳුනුම්පත් අංකය" name="P_ID">
+    </div>
+
+     <div class="col">
+  
+           <label for="validationServer22">පොලිස් වසම</label>
+        <select name="Police_Domain" id="domain">
+  <option value="කොළඹ">කොළඹ</option>
+  <option value="කොටුව">කොටුව</option>
+  <option value="අක්මීමන">අක්මීමන</option>
+  <option value="සීදුව">සීදුව</option>
+  <option value="රද්දොලුගම">රද්දොලුගම</option>
+<option value="ආමර් විදිය">ආමර් විදිය</option>
+<option value="කදාන">කදාන</option>
+</select>
+</div>
+<div class="col">
+   <label for="validationServer23">අත්අඩංගුව ගත් වේලාව</label>
+   <span>
+
+       
+        <input type="time" class="" placeholder="" name="Time_of_arrest">
+
+
+</span>
+ </div>
+     
+     <div class="col">
+   <label for="validationServer23">ඇප ලබා දීමට ගත වූ කාලය</label>
+
+
+   </div>
+  <center>
+<div class="nativeTimePicker">
+     <span>
+        <label for="hour">පැය:</label>
+        <select id="hour" name="Bail_time_taken_hours">
+  <option value="00">00</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+<option value="12">12</option>
+
+     </select>
+      </span>
+      <span>
+        <label for="minute">මිනිත්තු:</label>
+        <select id="minute" name="Bail_time_taken_minutes">
+            <option value="0">00</option>
+            <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="10">11</option>
+<option value="12">12</option>
+ <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+<option value="22">22</option>
+ <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+<option value="32">32</option>
+ <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+  <option value="44">44</option>
+  <option value="45">45</option>
+<option value="46">46</option>
+ <option value="47">47</option>
+  <option value="48">48</option>
+  <option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+  <option value="53">53</option>
+  <option value="54">54</option>
+  <option value="55">55</option>
+  <option value="56">56</option>
+<option value="57">57</option>
+ <option value="58">58</option>
+  <option value="59">59</option>
+  <option value="60">60</option>
+
+     </select>
+      </span>
+</center>
+    
+ 
+</div>
+
+</div>
+
+
+
+
+
+
+  <center>
+   <a href="register1.html">පසු පිටුවට</a>	
+       <button type="reset" class="btn btn-primary">මකන්න</button>
+       <button type="submit" class="btn btn-primary">මීලඟ පිටුවට</button>
+ 
+
+ </center>
+  	<center><a href='login.html'>Login here</a></center>
+</form>
+  
+   <style>
+.footer {
+    position: fixed;
+    left: ;
+    bottom: 0;
+    width: 100%;
+	height: 3%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>All Right reserved @warunachathuranga@</p>
+  
+</div>
+</div>
+</body>
+</html>
